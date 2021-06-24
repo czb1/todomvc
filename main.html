@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <meta name="author" content="Zhe ZHANG" />
+    <meta name="description" content="Tongji Univ. --- Web Programming Course Project. TodoMVC based on native HTML+JS+CSS." />
+    <meta name="keywords" content="TodoMVC, Web Programming, Tongji University, Course Project, Native JavaScript" /> -->
+
+    <title>TodoMVC</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <script type="text/javascript" src="static/js/main.js"></script>
+    
+
+</head>
+<body>
+    <div id="main"></div>
+        <!-- Full View Background -->
+        <div id="bg" class="bg"></div>
+
+        <!-- Todo title & Function Bar with Counter -->
+        <header id="boxhead">
+            <div class="boxheadm">
+                <h1 id="title" class="todotitle">TODO</h1>
+                <img loading="eager" class="memoimg" src="static/img/bwl.png" alt="memo" width="36" height="36">
+            </div>
+            <div class="HeaderSubGroup">
+                <span id="todocount"></span>
+                <ul class="buts">
+                    <li><button class="but1" onclick="bt1()">全部完成</button></li>
+                    <li><button class="buttt" onclick="buttt()">全部未完成</button></li>
+                    <li><button class="but2" onclick="bt2()">添加</button></li>
+                    <li><button class="but3" onclick="bt3()">删除已完成</button></li>
+                    <li><button class="but3" onclick="fbt()">查找</button></li>
+                </ul>
+            </div>
+        </header>
+
+        
+        
+        
+        <div class="todos" id="todos">
+            
+        </div>
+
+        
+        <div id="subpage" class="subpage">
+            <h2 class="subtitle">添加todo</h2>
+            <input id="todo-input" type="text" placeholder="请输入想要添加的todo" autofocus>
+            <div class="InputBtnGroup">
+                <button class="subbut" onclick="subbt3()">取消</button>
+                <button class="subbut" onclick="subbt2()">添加</button>
+            </div>
+        </div>
+        <div id="edittodopage" class="edittodopage">
+            <h2 class="subtitle">编辑todo</h2>
+            <input id="edit-input" type="text" placeholder="请输入想要编辑的内容" autofocus>
+            <div class="InputBtnGroup">
+                <button class="subbut" onclick="editbt3()">取消</button>
+                <button class="subbut" onclick="editbt2()">编辑</button>
+            </div>
+        </div>
+        <div id="findtodo" class="findtodo">
+            <h2 class="subtitle">查找todo</h2>
+            <input id="find-input" type="text" placeholder="请输入想要查找的todo" autofocus>
+            <div class="InputBtnGroup">
+                <div class="finded" id="todofind">
+            
+                </div>
+                <div class="findbutg">
+                <button class="subbut" onclick="find1()">取消</button>
+                <button class="subbut" onclick="find2()">查找</button>
+            </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</body>
+</html>
