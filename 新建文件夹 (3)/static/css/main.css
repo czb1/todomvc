@@ -1,0 +1,212 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 25px;
+    min-height: 100vh;
+}
+
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* filter: blur(5px); */
+    z-index: -1;
+}
+
+
+
+
+
+header {
+    margin: 15px 0;
+}
+
+header .boxheadm {
+    width: 90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   /* box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.6); */
+    border-radius: 20px;
+    overflow: hidden;
+}
+/* header .HeaderGroup .spotlight{
+    color:azure
+} */
+header .boxheadm .todotitle {
+    margin-left:80px;  
+}
+.HeaderSubGroup {
+    width: 95%;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    border-bottom: 3px solid white;
+}
+#todocount {
+    margin-right: 30px;
+}
+.memoimg{
+    margin-left:20px;
+}
+
+.HeaderSubGroup .buts {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 10px;
+}
+.HeaderSubGroup .buts .but1{
+    background: url("../img/complate.png") no-repeat;
+    width: 110%;
+}
+.HeaderSubGroup .buts .buttt{
+    background: url("../img/complate.png") no-repeat;
+    width: 110%;
+    margin-left:2px
+}
+.HeaderSubGroup .buts .but2{
+    background: url("../img/complate.png") no-repeat;
+    width: 110%;
+    margin-left:7px
+}
+.HeaderSubGroup .buts .but3{
+    background: url("../img/complate.png") no-repeat;
+    width: 110%;
+    margin-left:10px
+}
+.subpage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0,0,0,0.85);
+    z-index: -1;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.todo-group{
+    height: 100px;
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.tg{
+    height: 100px;
+    width: 200px;
+    background: url("../img/textbg.png") no-repeat;
+    background-position: center;
+    background-size: 200px 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tdt{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.tdtt{
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ti{
+    font-weight:bold;
+    font-size: x-small;
+    height: 100px;
+    width: 100px;
+    background: url("../img/tag.png") no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.subpage .subtitle{
+    margin-bottom: 20px;
+}
+
+
+.findtodo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0,0,0,0.85);
+    z-index: -1;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.findtodo .InputBtnGroup{
+    grid-template-columns: repeat(2, auto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.findtodo .subtitle{
+    margin-bottom: 20px;
+}
+
+
+.edittodopage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(0,0,0,0.85);
+    z-index: -1;
+    opacity: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.edittodopage .subtitle{
+    margin-bottom: 20px;
+}
